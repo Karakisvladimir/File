@@ -23,12 +23,10 @@ public class PhoneNumberValidation {
     private static boolean validatePhoneNumber(String token) {
         if (token.matches("^\\d{3}-\\d{3}-\\d{4}$"))
             return true;
-
         else if (token.matches("^\\(\\d{3}\\)\\s\\d{3}-\\d{4}$"))
             return true;
         else
             return false;
-        //return token.matches("^(\\(\\d{3}\\)\\d{3}-\\d{4}|\\d{3} -\\d{3}-\\d{4})$");
 
     }
 }
